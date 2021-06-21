@@ -1,0 +1,11 @@
+@media screen and (max-width: 766px) {
+	html,
+	body {
+		overflow-x: hidden;
+	}
+
+	body {
+		width: 766px;
+		margin: 0 auto;
+	}
+}
