@@ -343,11 +343,6 @@ ul:after {
 	text-align: center;
 	margin-right: 40px;
 }
-
-.slider__item a {
-}
-.slider__item.slick-center {
-}
 /* Конец слайдера */
 
 .button_size {
