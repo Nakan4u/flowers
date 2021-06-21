@@ -11,6 +11,7 @@
 
 html,
 body {
+	/* width should be 100% to have posibility to zoom, you should use wrapper div to limit some content width */
 	width: 1920px;
 	height: 100%;
 	margin: 0 auto;
@@ -41,6 +42,7 @@ li {
 }
 
 header {
+	/* should be 100% width and 1600 content inside */
 	width: 1600px;
 	height: 669px;
 	background: url(../img/header.jpg) no-repeat;
@@ -113,6 +115,7 @@ header {
 	letter-spacing: 0.03em;
 }
 
+/* it's no need too use id here, just class .header, .footer */
 #header_button,
 #footer_button {
 	display: flex;
@@ -162,6 +165,7 @@ ul:after {
 
 .submenu {
 	position: absolute;
+	/* width should be dynamic we can have there 100500$ */
 	width: 94px;
 	top: 37px;
 	left: 0px;
@@ -193,7 +197,8 @@ ul:after {
 
 .titles {
 	width: 570px;
-	height: 252px;
+	/* text height should be dynamic don't set height for it */
+	/* height: 252px; */
 	display: flex;
 	flex-direction: column;
 	margin-top: 135px;
@@ -209,11 +214,13 @@ ul:after {
 	font: 500 15px/22px "Montserrat", sans-serif;
 	color: #222720;
 	margin-bottom: 30px;
-	width: 487px;
+	/* same here, don't set width as parent already limit it */
+	/* width: 487px;  */
 }
 
 .button {
-	width: 220px;
+	/* buttons should not be limited by width; */
+	/* width: 220px; */
 	height: 48px;
 	border: 1px #445340;
 	background: #445340;
@@ -237,7 +244,7 @@ ul:after {
 	text-align: center;
 	margin: 50px 0 49px 0;
 }
-
+/* стилі слайдера краще винисти в окримий файл стилів */
 /* Стили слайдера */
 .slider_wrapper {
 	width: 1379px;
@@ -344,9 +351,10 @@ ul:after {
 	margin-right: 40px;
 }
 /* Конец слайдера */
+/* стилі слайдера краще винисти в окримий файл стилів */
 
 .button_size {
-	width: 136px;
+	/* width: 136px; */
 	height: 37px;
 	font: 600 15px/18px "Montserrat", sans-serif;
 	padding: 0;
@@ -383,13 +391,16 @@ ul:after {
 }
 
 .left_product .button_position {
+	/* width should be set to the parrent */
 	width: 370px;
 	height: 48px;
+	/* should not be absolute here */
 	position: absolute;
 	bottom: 4px;
 	opacity: 0.7;
 }
 
+/* this styles to remove */
 .card_product .button_position2 {
 	width: 370px;
 	height: 48px;
@@ -435,8 +446,9 @@ ul:after {
 	text-align: center;
 	color: #222720;
 	margin-bottom: 20.76px;
-	width: 430px;
-	height: 70px;
+	/* don't set any width and height for the text at all! */
+	/* width: 430px;
+	height: 70px; */
 }
 
 .form input {
@@ -456,14 +468,15 @@ ul:after {
 .form input:hover {
 	border: #445340 1px solid;
 }
-
+/* same styles as previous so let's combine; */
 .form input::after {
 	border: #445340 1px solid;
 }
 
 .button_size2 {
-	width: 430px;
-	height: 39.74px;
+	/* don't do it again) */
+	/* width: 430px;
+	height: 39.74px; */
 }
 
 .inputs h3 {
@@ -472,6 +485,7 @@ ul:after {
 	margin-bottom: 21px;
 }
 
+/* please  move slider styles outside; */
 .slider_bottom h3 {
 	font: 900 26px/32px "Montserrat", sans-serif;
 	color: #222720;
@@ -501,7 +515,8 @@ footer {
 
 .footer_nav {
 	width: 1181px;
-	height: 276px;
+	/* parent already has a height */
+	/* height: 276px; */
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
